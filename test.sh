@@ -5,5 +5,4 @@
 dnf update -y
 dnf install -y \
 
-dolphin \
-/
+dolphin
