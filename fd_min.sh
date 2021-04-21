@@ -10,10 +10,8 @@ dnf update -y
 
 # install minimal kde plasma desktop
 dnf install -y \
-@"base-x" \
-@"Common NetworkManager Submodules" \
-@"Fonts" \
-@"Hardware Support" \
+plasma-desktop \
+sddm \
 bluedevil \
 breeze-gtk \
 breeze-icon-theme \
@@ -43,7 +41,6 @@ kwin \
 pam-kwallet \
 pinentry-qt \
 plasma-breeze \
-plasma-desktop \
 plasma-desktop-doc \
 plasma-drkonqi \
 plasma-nm \
@@ -51,13 +48,18 @@ plasma-nm-openvpn \
 plasma-pa \
 plasma-user-manager \
 polkit-kde \
-sddm \
 sddm-breeze \
 sddm-kcm \
 sddm-theme-breeze \
 setroubleshoot \
 sni-qt \
 xorg-x11-drv-libinput
+
+# @"base-x" \
+# @"Common NetworkManager Submodules" \
+# @"Fonts" \
+# @"Hardware Support" \
+
 # plasma-workspace \
 # plasma-workspace-geolocation \
 # qt5-qtbase-gui \
