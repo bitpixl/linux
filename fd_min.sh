@@ -79,6 +79,7 @@ kget \
 plasma-pk-updates  \
 plasma-discover
 #plasma-discover-backend-flatpak \
+/
 
 #Enable SDDM
 systemctl enable sddm
