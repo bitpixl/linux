@@ -5,7 +5,7 @@ if [[ `id -u` != 0 ]]; then
     exit
 fi
 
-dnf update -y
+# install minimal kde plasma desktop
 dnf install -y \
-@fonts \
+@"base-x" \
 nano
