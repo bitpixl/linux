@@ -6,4 +6,5 @@ if [[ `id -u` != 0 ]]; then
 fi
 
 dnf update -y
-dnf install -y dolphin
+dnf install /
+dolphin
