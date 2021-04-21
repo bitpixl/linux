@@ -10,9 +10,9 @@ dnf update -y
 
 # install minimal kde plasma desktop
 dnf install -y \
-@base-x \
+@"base-x" \
 @"Common NetworkManager Submodules" \
-@Fonts \
+@"Fonts" \
 @"Hardware Support" \
 bluedevil \
 breeze-gtk \
