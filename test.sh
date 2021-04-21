@@ -5,7 +5,5 @@
 dnf update -y
 dnf install -y \
 
-#core packages
-#@"Package Name" contain many packages (group)
 dolphin \
 /
