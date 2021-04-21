@@ -8,4 +8,6 @@ fi
 dnf update -y
 dnf install -y \
 nano \
+#core packages
+#@"Package Name" contain many packages (group)
 vim
