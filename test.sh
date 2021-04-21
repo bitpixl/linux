@@ -1,6 +1,9 @@
 #!/bin/bash
 
-#install basic plasma desktop (run as su)
-#update system
+if [[ `id -u` != 0 ]]; then
+    echo "This script must be run as root."
+    exit
+fi
+
 dnf update -y
 dnf install -y dolphin
