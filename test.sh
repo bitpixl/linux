@@ -7,6 +7,5 @@ fi
 
 dnf update -y
 dnf install -y \
-nano \
-vim
-ls
+@fonts \
+nano
