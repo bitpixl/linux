@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
-
 #install basic plasma desktop (run as su)
 #update system
 dnf update -y \
-
 #core packages
 #@"Package Name" contain many packages (group)
 @base-x \
@@ -58,7 +56,6 @@ sddm-theme-breeze \
 setroubleshoot \
 sni-qt \
 xorg-x11-drv-libinput \
-
 #apps
 ark \
 firewall-config \
@@ -72,16 +69,12 @@ kwrite \
 nano \
 okular \
 kget \
-
 #flatpak
-
-
 #Plasma-Discover
 plasma-pk-updates  \
 plasma-discover
 #plasma-discover-backend-flatpak \
 /
-
 #Enable SDDM
 systemctl enable sddm
 systemctl set-default graphical.target
