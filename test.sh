@@ -8,4 +8,11 @@ fi
 # install minimal kde plasma desktop
 dnf install -y \
 @"base-x" \
-nano
+@"Common NetworkManager Submodules" \
+@"Fonts" \
+@"Hardware Support" \
+bluedevil \
+breeze-gtk \
+breeze-icon-theme \
+cups-pk-helper \
+dolphin
