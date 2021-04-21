@@ -7,5 +7,5 @@ fi
 
 dnf update -y
 dnf install -y \
-dolphin \
-kcalc
+nano \
+vim
