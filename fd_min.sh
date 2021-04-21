@@ -5,10 +5,11 @@ if [[ `id -u` != 0 ]]; then
     exit
 fi
 
+# update system files before installing desktop enviroment
 dnf update -y
+
+# install minimal kde plasma desktop
 dnf install -y \
-#core packages
-#@"Package Name" contain many packages (group)
 @base-x \
 @"Common NetworkManager Submodules" \
 @Fonts \
@@ -49,20 +50,21 @@ plasma-nm \
 plasma-nm-openvpn \
 plasma-pa \
 plasma-user-manager \
-#plasma-workspace \
-#plasma-workspace-geolocation \
 polkit-kde \
-#qt5-qtbase-gui \
-#qt5-qtdeclarative \
 sddm \
 sddm-breeze \
 sddm-kcm \
 sddm-theme-breeze \
 setroubleshoot \
 sni-qt \
-xorg-x11-drv-libinput \
+xorg-x11-drv-libinput
+# plasma-workspace \
+# plasma-workspace-geolocation \
+# qt5-qtbase-gui \
+# qt5-qtdeclarative \
 
-#apps
+# install mandatory apps for kde plasma
+dnf install -y \
 ark \
 firewall-config \
 flameshot \
@@ -76,13 +78,14 @@ nano \
 okular \
 kget \
 
-#flatpak
+# flatpak
 
-#Plasma-Discover
+# kde discover
+dnf install -y \
 plasma-pk-updates  \
 plasma-discover
-#plasma-discover-backend-flatpak
+# plasma-discover-backend-flatpak
 
-#Enable SDDM
+# Enable SDDM
 systemctl enable sddm
 systemctl set-default graphical.target
