@@ -76,7 +76,7 @@ konsole5 \
 kwrite \
 nano \
 okular \
-kget \
+kget
 
 # flatpak
 
