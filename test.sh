@@ -6,6 +6,6 @@ if [[ `id -u` != 0 ]]; then
 fi
 
 dnf update -y
-dnf install \
+dnf install -y \
 dolphin \
 kcalc
