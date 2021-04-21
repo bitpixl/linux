@@ -6,5 +6,6 @@ if [[ `id -u` != 0 ]]; then
 fi
 
 dnf update -y
-dnf install /
-dolphin
+dnf install \
+dolphin \
+kcalc
