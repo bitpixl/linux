@@ -1,9 +1,12 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-#install basic plasma desktop (run as su)
-#update system
-dnf update -y \
+if [[ `id -u` != 0 ]]; then
+    echo "This script must be run as root."
+    exit
+fi
 
+dnf update -y
+dnf install -y \
 #core packages
 #@"Package Name" contain many packages (group)
 @base-x \
@@ -78,8 +81,7 @@ kget \
 #Plasma-Discover
 plasma-pk-updates  \
 plasma-discover
-#plasma-discover-backend-flatpak \
-/
+#plasma-discover-backend-flatpak
 
 #Enable SDDM
 systemctl enable sddm
