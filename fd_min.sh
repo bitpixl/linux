@@ -27,7 +27,6 @@ dnf install -y xorg-x11-utils xdg-user-dirs plasma-desktop sddm sddm-kcm sddm-br
 # qt5-qtdeclarative \
 
 # install mandatory apps for kde plasma
-read -p "Press enter to continue"
 dnf install -y dolphin ark firewall-config flameshot gwenview kcalc kcharselect kmousetool konsole5 kwrite nano okular kget
 
 # flatpak
