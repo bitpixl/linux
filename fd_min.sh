@@ -9,7 +9,15 @@ fi
 dnf update -y
 
 # install minimal kde plasma desktop
-dnf install -y plasma-desktop sddm bluedevil breeze-gtk breeze-icon-theme cups-pk-helper dolphin gnome-keyring-pam kcm_systemd kde-gtk-config kde-partitionmanager kde-print-manager kde-settings-pulseaudio kde-style-breeze kdegraphics-thumbnailers kdeplasma-addons kdialog kdnssd khotkeys kinfocenter kmenuedit kscreen kscreenlocker ksshaskpass ksysguard kwallet-pam kwalletmanager5 kwin pam-kwallet pinentry-qt plasma-breeze plasma-desktop-doc plasma-drkonqi plasma-nm plasma-nm-openvpn plasma-pa plasma-user-manager polkit-kde sddm-breeze sddm-kcm sddm-theme-breeze setroubleshoot sni-qt xorg-x11-drv-libinput
+dnf install -y plasma-desktop sddm bluedevil breeze-gtk breeze-icon-theme cups-pk-helper dolphin gnome-keyring-pam kcm_systemd kde-gtk-config 
+read -p "Press enter to continue"
+dnf install -y kde-partitionmanager kde-print-manager kde-settings-pulseaudio kde-style-breeze kdegraphics-thumbnailers kdeplasma-addons 
+read -p "Press enter to continue"
+dnf install -y kdialog kdnssd khotkeys kinfocenter kmenuedit kscreen kscreenlocker ksshaskpass ksysguard kwallet-pam kwalletmanager5 kwin 
+read -p "Press enter to continue"
+dnf install -y pam-kwallet pinentry-qt plasma-breeze plasma-desktop-doc plasma-drkonqi plasma-nm plasma-nm-openvpn plasma-pa plasma-user-manager 
+read -p "Press enter to continue"
+dnf install -y polkit-kde sddm-breeze sddm-kcm sddm-theme-breeze setroubleshoot sni-qt xorg-x11-drv-libinput
 
 # @"base-x" \
 # @"Common NetworkManager Submodules" \
@@ -22,6 +30,7 @@ dnf install -y plasma-desktop sddm bluedevil breeze-gtk breeze-icon-theme cups-p
 # qt5-qtdeclarative \
 
 # install mandatory apps for kde plasma
+read -p "Press enter to continue"
 dnf install -y ark firewall-config flameshot gwenview kcalc kcharselect kmousetool konsole5 kwrite nano okular kget
 
 # flatpak
